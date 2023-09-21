@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="MainWindow">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="title">DriveAssist</property>
+    <property name="default-width">800</property>
+    <property name="default-height">600</property>
+    <child>
+      <object class="GtkOverlay">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkDrawingArea" id="MainCanvas">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+          </object>
+          <packing>
+            <property name="index">-1</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="ZoomInButton">
+            <property name="label" translatable="yes">+</property>
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="sensitive">False</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">end</property>
+            <property name="valign">end</property>
+          </object>
+          <packing>
+            <property name="index">4</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="ZoomOutButton">
+            <property name="label" translatable="yes">-</property>
+            <property name="width-request">40</property>
+            <property name="height-request">40</property>
+            <property name="sensitive">False</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">end</property>
+            <property name="valign">end</property>
+            <property name="margin-bottom">40</property>
+          </object>
+          <packing>
+            <property name="index">5</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="ZoomFitButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">end</property>
+            <property name="valign">end</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="width-request">10</property>
+                <property name="height-request">10</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">zoomfit.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="index">6</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="ProceedButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">end</property>
+            <property name="valign">start</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">quit.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="index">7</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkSearchEntry" id="sBar2">
+            <property name="width-request">300</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="margin-top">30</property>
+            <property name="primary-icon-name">edit-find-symbolic</property>
+            <property name="primary-icon-activatable">False</property>
+            <property name="primary-icon-sensitive">False</property>
+          </object>
+          <packing>
+            <property name="index">8</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkSearchEntry" id="sBar1">
+            <property name="width-request">300</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="primary-icon-name">edit-find-symbolic</property>
+            <property name="primary-icon-activatable">False</property>
+            <property name="primary-icon-sensitive">False</property>
+          </object>
+          <packing>
+            <property name="index">9</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkStatusbar" id="StatusBar">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">end</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">2</property>
+          </object>
+          <packing>
+            <property name="index">10</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="WeatherButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">start</property>
+            <property name="valign">end</property>
+            <property name="margin-left">50</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">weather.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="index">7</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="FindButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="margin-left">300</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">search.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="index">9</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="ColorblindModeButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">start</property>
+            <property name="valign">end</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">color.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="index">11</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkComboBoxText" id="CityDropDown">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">end</property>
+            <property name="valign">start</property>
+            <property name="margin-right">35</property>
+            <property name="margin-top">2</property>
+            <property name="active">19</property>
+            <property name="has-entry">True</property>
+            <items>
+              <item id="1" translatable="yes">beijing</item>
+              <item id="2" translatable="yes">cairo</item>
+              <item id="3" translatable="yes">cape-Town</item>
+              <item id="4" translatable="yes">hong-kong</item>
+              <item id="5" translatable="yes">iceland</item>
+              <item id="6" translatable="yes">interlaken</item>
+              <item id="7" translatable="yes">kyiv</item>
+              <item id="8" translatable="yes">london</item>
+              <item id="9" translatable="yes">new-delhi</item>
+              <item id="10" translatable="yes">new-york</item>
+              <item id="11" translatable="yes">rio-de-janeiro</item>
+              <item id="12" translatable="yes">saint-helena</item>
+              <item id="13" translatable="yes">singapore</item>
+              <item id="14" translatable="yes">sydney</item>
+              <item id="15" translatable="yes">tehran</item>
+              <item id="16" translatable="yes">tokyo</item>
+              <item id="17" translatable="yes">toronto</item>
+              <item id="18" translatable="yes">golden-horseshoe</item>
+            </items>
+            <child internal-child="entry">
+              <object class="GtkEntry" id="CityDropDownSelected">
+                <property name="can-focus">False</property>
+                <property name="text" translatable="yes">-Select City-</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="index">11</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="ClearButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="margin-left">300</property>
+            <property name="margin-top">30</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">clear.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="index">11</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="HelpButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">end</property>
+            <property name="valign">start</property>
+            <property name="margin-right">220</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">help.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="index">12</property>
+          </packing>
+        </child>
+        <child type="overlay">
+          <object class="GtkButton" id="DirectionButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="margin-top">60</property>
+            <property name="relief">none</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">direction.png</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="index">13</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
