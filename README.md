@@ -1,4 +1,4 @@
-# AtlasVision: Intelligent GIS Map Application
+# AtlasVision: GoogleMaps for drivers
 
 AtlasVision is an advanced Geographic Information System (GIS) application designed for interactive map visualization, spatial analysis, and algorithmic exploration. Built with C++ and leveraging custom graphics and UI libraries, AtlasVision provides a robust platform for both educational and practical applications in urban planning, navigation, and geospatial data analysis.
 
